@@ -1,0 +1,73 @@
+* {
+  font-family: sans,dejavu sans,helvetica,verdana,arial,sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+h1, h1>* { font-size: 22px; }
+h2, h2>* { font-size: 20px; }
+h3, h3>* { font-size: 18px; }
+h4, h4>* { font-size: 18px; }
+h5, h5>* { font-size: 16px; }
+h6, h6>* { font-size: 16px; }
+small, small>* { font-size: 10px; }
+big, big>* { font-size: 18px; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body>br {
+  clear: both;
+}
+
+body>div  {
+  float: left;
+}
+
+body>div>address {
+  float: left;
+  display: block;
+  border-bottom: 2px solid #777;
+}
+
+body>div>address>a {
+  float: left;
+  display: block;
+  width: 10em;
+  margin: auto 1px auto 3px;
+  text-align: center;
+  font-style: normal;
+  background-color: inherit;
+  border: 1px solid #777;
+  border-bottom: none;
+}
+
+body>div>address>a:hover {
+  color: #fff;
+  background-color: #777;
+}
+
+body>div>div>* {
+  width: inherit;
+}
+
+body>div>div>h1 {
+  border-bottom: 1px dotted #555;
+}
+
