@@ -20,28 +20,24 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-/**
- * Styles for text inputs and menus.
- */
+body {
+  font-family: sans-serif;
+}
 
-
-/**
- * The division nested after body meaning that you want
- * write lines above layout.
- */
 body>div>div {
   clear: both;
 }
-
 
 /****************************************************************************
  * Form definitions
  ****************************************************************************/
 
-form>fieldset {
+/* The form paragraph cleanup for new*/
+form>fieldset, form>div, form>p {
+  clear: both;
 }
 
-form>fieldset>legend {
+form>fieldset>legend, form>div>label {
   font-weight: bold;
 }
 
@@ -49,77 +45,34 @@ form>fieldset>legend {
  * Using a any block tag element within field set, meaning that you want
  * creates a new column in the form layout.
  */
-form>fieldset>div {
-  float: left;
+form>fieldset>div, form>fieldset>p, form>div>div {
   clear: both;
 }
 
-form>fieldset>div>label {
+form * div>div {
+  float: left;
+}
+
+/* TODO: How to format this? */
+form div>p {
+}
+
+form * div>label, form * div>input, form * p>label, form * p>input {
+  display: block;
+}
+
+form>fieldset>legend>a {
+}
+
+/******************************************************************************
+ * Common classes
+ ******************************************************************************/
+
+.column {
   display: block;
   float: left;
 }
 
-form>fieldset>div>label>span,
-form>fieldset>div>label>input {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-}
-
-form>fieldset>div>label>input {
-}
-
-form>div {
-}
-
-form>div>input,
-form>div>select {
-}
-
-input[type=text], textarea, select {
-}
-
-input textarea {
-}
-
-/* The form paragraph cleanup for new*/
-form>div {
+.cleaner {
   clear: both;
 }
-
-form hr {
-  margin : 0px;
-  padding : 0px;
-  border : 1px solid;
-  clear : both;
-}
-
-form p label {
-  float: left;
-  display: block;
-  width: auto;
-  margin: inherit;
-  padding: inherit;
-}
-
-form p label span {
-}
-
-form p label input[type=text],
-form p label textarea,
-form p label select,
-form p label span {
-  width: 100%;
-  display: block;
-}
-
-form p label span select {
-  width: auto;
-  display: inline;
-}
-
-/* Grouped text fields */
-form p input[type=text] {
-  float: right;
-}
-
